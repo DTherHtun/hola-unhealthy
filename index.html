@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>{{.PageTitle}}</title>
+		<link rel="stylesheet" href="static/styles/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>{{.PageTitle}}</h1>
+				<p>Image by opsLab</p>
+				<p><ul>
+					{{range .Infos}}
+							<li>{{.Title}} {{.Done}}</li>
+					{{end}}
+				</ul> </p>
+			</div>
+			<center>
+				<image src="static/images/gopher.png"></image>
+			</center>
+		</div>
+	</body>
+</html>
